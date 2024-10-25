@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="CSS/admin.css">
+</head>
+<body>
+    <div class="container">
+        <div id="left-container">
+            <div id="horariosDisplay"></div>
+        </div>
+
+        <div id="map"></div>
+    </div>
+    
+    <div class="horario-buttons">
+        <button id="matutinosButton" class="horario-button">Ver horarios matutinos</button>
+        <button id="nocturnosButton" class="horario-button">Ver horarios nocturnos</button>
+        <button id="modificarHorariosButton" class="horario-button">Modificar horarios seleccionados</button>
+    </div>
+
+    <div id="form-container" class="form-container" style="display:none;"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="JS/admin.js"></script>
+</body>
+</html>

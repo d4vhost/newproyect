@@ -1,0 +1,186 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+    background-size: cover;
+    color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Cambiado height a min-height */
+    overflow-y: auto; /* Permitir scroll vertical */
+}
+
+.container {
+    max-width: 350px;
+    background: rgba(0, 0, 0, 0.8); 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); 
+    text-align: center;
+    width: 90%; /* Ajuste para dispositivos móviles */
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #00c6ff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1em;
+    color: #bdc3c7;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    transition: background-color 0.3s ease;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: #3b5998;
+    box-shadow: 0 0 10px #00c6ff;
+    outline: none;
+}
+
+input[type="submit"].submit-btn {
+    padding: 12px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"].submit-btn:hover {
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+}
+
+button.login-btn {
+    padding: 12px;
+    background: linear-gradient(90deg, #00ff87, #00a86b);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button.login-btn:hover {
+    background: linear-gradient(90deg, #00a86b, #00ff87);
+}
+
+.container p {
+    color: #95a5a6;
+    margin-top: 20px;
+}
+
+a {
+    color: #00c6ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES PARA HACER RESPONSIVO */
+
+@media (max-width: 720px) {
+    .container {
+        max-width: 85%; /* Ajustar el ancho máximo para pantallas más grandes */
+        padding: 20px; /* Aumentar el padding para un mejor espaciado */
+        margin: 15px; /* Reducir el margen para mantener una mejor proporción */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Aumentar el tamaño de fuente para un mejor legibilidad */
+    }
+
+    label {
+        font-size: 1em; /* Mantener un tamaño de fuente adecuado */
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px; /* Aumentar el espaciado entre inputs */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 14px; /* Aumentar el tamaño de fuente para mayor legibilidad */
+        padding: 10px; /* Aumentar padding para un mejor manejo */
+    }
+
+    input[type="submit"].submit-btn,
+    button.login-btn {
+        font-size: 14px; /* Aumentar tamaño de fuente en botones */
+        padding: 12px; /* Aumentar el padding para un mejor clic */
+        margin-top: 12px; /* Separación adicional para los botones */
+    }
+
+    body {
+        padding: 25px; /* Aumentar el padding del body */
+    }
+}
+
+
+/* MEDIA QUERIES PARA HACER RESPONSIVO */
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 3px; /* Inputs mucho más juntos en pantallas pequeñas */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    input[type="submit"].submit-btn,
+    button.login-btn {
+        font-size: 13px;
+        padding: 10px;
+        margin-top: 10px; /* Separación adicional para los botones */
+    }
+
+    body {
+        padding: 20px;
+    }
+}
